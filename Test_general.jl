@@ -1,6 +1,6 @@
 using Pkg
-Pkg.activate("DistributedMPCGP")
-# Pkg.instantiate()
+Pkg.activate("./DDAAModule")
+Pkg.instantiate()
 
 using DDAAModule
 using Plots
@@ -9,7 +9,7 @@ using Statistics
 using Random, Distributions  # hide+
 using HDF5
 using JLD2
-# Pkg.build("DDAAModule")
+Pkg.build("DDAAModule")
 r=30.0
 # Helping functions
 function check_collision(all_agents)
